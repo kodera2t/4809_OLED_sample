@@ -47,6 +47,14 @@ void setup() {
 }
 
 void loop() {
+  display.startscrollright(0x00, 0x0F);
+  delay(3000);
+  display.stopscroll();
+  delay(1000);
+  display.startscrollleft(0x00, 0x0F);
+  delay(3000);
+  display.stopscroll();
+  delay(1000);
 }
 
 
